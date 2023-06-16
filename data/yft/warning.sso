@@ -1,0 +1,1022 @@
+#V3.30.16.00;_2020_09_03;_safe;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_12.2
+#Stock Synthesis (SS) is a work of the U.S. Government and is not subject to copyright protection in the United States.
+#Foreign copyrights may apply. See copyright.txt for more information.
+Fri Jun 16 16:27:41 2023
+
+Season durations sum to <11.9, so SS assumes you are doing years as pseudo-seasons.
+There can be only 1 season in this timestep and SS will ignore month input and assume all observation occur at middle of this pseudo-year
+mortality, growth and movement rates are per annum, so will get multiplied by the duration of this timestep as they are used.
+What gets reported as age is now age in timesteps; and input of age-specific M or K requires one entry per timestep
+Similarly, output of age-specific quantities is in terms of number of timesteps, not real years
+spawn_month and settlement_month in control file are best set to 1.0 when doing years as pseudo-seasons
+fishing fleet: 1 surveytime read as: 1 normally is -1 for fishing fleet; can override for indiv. obs. using 1000+month
+fishing fleet: 2 surveytime read as: 1 normally is -1 for fishing fleet; can override for indiv. obs. using 1000+month
+fishing fleet: 3 surveytime read as: 1 normally is -1 for fishing fleet; can override for indiv. obs. using 1000+month
+fishing fleet: 4 surveytime read as: 1 normally is -1 for fishing fleet; can override for indiv. obs. using 1000+month
+fishing fleet: 5 surveytime read as: 1 normally is -1 for fishing fleet; can override for indiv. obs. using 1000+month
+fishing fleet: 6 surveytime read as: 1 normally is -1 for fishing fleet; can override for indiv. obs. using 1000+month
+fishing fleet: 7 surveytime read as: 1 normally is -1 for fishing fleet; can override for indiv. obs. using 1000+month
+fishing fleet: 8 surveytime read as: 1 normally is -1 for fishing fleet; can override for indiv. obs. using 1000+month
+fishing fleet: 9 surveytime read as: 1 normally is -1 for fishing fleet; can override for indiv. obs. using 1000+month
+fishing fleet: 10 surveytime read as: 1 normally is -1 for fishing fleet; can override for indiv. obs. using 1000+month
+fishing fleet: 11 surveytime read as: 1 normally is -1 for fishing fleet; can override for indiv. obs. using 1000+month
+fishing fleet: 12 surveytime read as: 1 normally is -1 for fishing fleet; can override for indiv. obs. using 1000+month
+fishing fleet: 13 surveytime read as: 1 normally is -1 for fishing fleet; can override for indiv. obs. using 1000+month
+fishing fleet: 14 surveytime read as: 1 normally is -1 for fishing fleet; can override for indiv. obs. using 1000+month
+fishing fleet: 15 surveytime read as: 1 normally is -1 for fishing fleet; can override for indiv. obs. using 1000+month
+fishing fleet: 16 surveytime read as: 1 normally is -1 for fishing fleet; can override for indiv. obs. using 1000+month
+fishing fleet: 17 surveytime read as: 1 normally is -1 for fishing fleet; can override for indiv. obs. using 1000+month
+fishing fleet: 18 surveytime read as: 1 normally is -1 for fishing fleet; can override for indiv. obs. using 1000+month
+fishing fleet: 19 surveytime read as: 1 normally is -1 for fishing fleet; can override for indiv. obs. using 1000+month
+fishing fleet: 20 surveytime read as: 1 normally is -1 for fishing fleet; can override for indiv. obs. using 1000+month
+fishing fleet: 21 surveytime read as: 1 normally is -1 for fishing fleet; can override for indiv. obs. using 1000+month
+ reset upper end of F_reporting_ages to be nages-2  
+Input catches in 297 can be overridden by caps or allocations
+Input catches in 298 can be overridden by caps or allocations
+Input catches in 299 can be overridden by caps or allocations
+Input catches in 300 can be overridden by caps or allocations
+Input catches in 301 can be overridden by caps or allocations
+Input catches in 302 can be overridden by caps or allocations
+Input catches in 303 can be overridden by caps or allocations
+Input catches in 304 can be overridden by caps or allocations
+Input catches in 305 can be overridden by caps or allocations
+Input catches in 306 can be overridden by caps or allocations
+Input catches in 307 can be overridden by caps or allocations
+Input catches in 308 can be overridden by caps or allocations
+Input catches in 309 can be overridden by caps or allocations
+Input catches in 310 can be overridden by caps or allocations
+Input catches in 311 can be overridden by caps or allocations
+Input catches in 312 can be overridden by caps or allocations
+Input catches in 313 can be overridden by caps or allocations
+Input catches in 314 can be overridden by caps or allocations
+Input catches in 315 can be overridden by caps or allocations
+Input catches in 316 can be overridden by caps or allocations
+Input catches in 317 can be overridden by caps or allocations
+Input catches in 318 can be overridden by caps or allocations
+Input catches in 319 can be overridden by caps or allocations
+Input catches in 320 can be overridden by caps or allocations
+Input catches in 321 can be overridden by caps or allocations
+Input catches in 322 can be overridden by caps or allocations
+Input catches in 323 can be overridden by caps or allocations
+Input catches in 324 can be overridden by caps or allocations
+Input catches in 325 can be overridden by caps or allocations
+Input catches in 326 can be overridden by caps or allocations
+Input catches in 327 can be overridden by caps or allocations
+Input catches in 328 can be overridden by caps or allocations
+Input catches in 329 can be overridden by caps or allocations
+Input catches in 330 can be overridden by caps or allocations
+Input catches in 331 can be overridden by caps or allocations
+Input catches in 332 can be overridden by caps or allocations
+Input catches in 333 can be overridden by caps or allocations
+Input catches in 334 can be overridden by caps or allocations
+Input catches in 335 can be overridden by caps or allocations
+Input catches in 336 can be overridden by caps or allocations
+Input catches in 297 can be overridden by caps or allocations
+Input catches in 298 can be overridden by caps or allocations
+Input catches in 299 can be overridden by caps or allocations
+Input catches in 300 can be overridden by caps or allocations
+Input catches in 301 can be overridden by caps or allocations
+Input catches in 302 can be overridden by caps or allocations
+Input catches in 303 can be overridden by caps or allocations
+Input catches in 304 can be overridden by caps or allocations
+Input catches in 305 can be overridden by caps or allocations
+Input catches in 306 can be overridden by caps or allocations
+Input catches in 307 can be overridden by caps or allocations
+Input catches in 308 can be overridden by caps or allocations
+Input catches in 309 can be overridden by caps or allocations
+Input catches in 310 can be overridden by caps or allocations
+Input catches in 311 can be overridden by caps or allocations
+Input catches in 312 can be overridden by caps or allocations
+Input catches in 313 can be overridden by caps or allocations
+Input catches in 314 can be overridden by caps or allocations
+Input catches in 315 can be overridden by caps or allocations
+Input catches in 316 can be overridden by caps or allocations
+Input catches in 317 can be overridden by caps or allocations
+Input catches in 318 can be overridden by caps or allocations
+Input catches in 319 can be overridden by caps or allocations
+Input catches in 320 can be overridden by caps or allocations
+Input catches in 321 can be overridden by caps or allocations
+Input catches in 322 can be overridden by caps or allocations
+Input catches in 323 can be overridden by caps or allocations
+Input catches in 324 can be overridden by caps or allocations
+Input catches in 325 can be overridden by caps or allocations
+Input catches in 326 can be overridden by caps or allocations
+Input catches in 327 can be overridden by caps or allocations
+Input catches in 328 can be overridden by caps or allocations
+Input catches in 329 can be overridden by caps or allocations
+Input catches in 330 can be overridden by caps or allocations
+Input catches in 331 can be overridden by caps or allocations
+Input catches in 332 can be overridden by caps or allocations
+Input catches in 333 can be overridden by caps or allocations
+Input catches in 334 can be overridden by caps or allocations
+Input catches in 335 can be overridden by caps or allocations
+Input catches in 336 can be overridden by caps or allocations
+Input catches in 297 can be overridden by caps or allocations
+Input catches in 298 can be overridden by caps or allocations
+Input catches in 299 can be overridden by caps or allocations
+Input catches in 300 can be overridden by caps or allocations
+Input catches in 301 can be overridden by caps or allocations
+Input catches in 302 can be overridden by caps or allocations
+Input catches in 303 can be overridden by caps or allocations
+Input catches in 304 can be overridden by caps or allocations
+Input catches in 305 can be overridden by caps or allocations
+Input catches in 306 can be overridden by caps or allocations
+Input catches in 307 can be overridden by caps or allocations
+Input catches in 308 can be overridden by caps or allocations
+Input catches in 309 can be overridden by caps or allocations
+Input catches in 310 can be overridden by caps or allocations
+Input catches in 311 can be overridden by caps or allocations
+Input catches in 312 can be overridden by caps or allocations
+Input catches in 313 can be overridden by caps or allocations
+Input catches in 314 can be overridden by caps or allocations
+Input catches in 315 can be overridden by caps or allocations
+Input catches in 316 can be overridden by caps or allocations
+Input catches in 317 can be overridden by caps or allocations
+Input catches in 318 can be overridden by caps or allocations
+Input catches in 319 can be overridden by caps or allocations
+Input catches in 320 can be overridden by caps or allocations
+Input catches in 321 can be overridden by caps or allocations
+Input catches in 322 can be overridden by caps or allocations
+Input catches in 323 can be overridden by caps or allocations
+Input catches in 324 can be overridden by caps or allocations
+Input catches in 325 can be overridden by caps or allocations
+Input catches in 326 can be overridden by caps or allocations
+Input catches in 327 can be overridden by caps or allocations
+Input catches in 328 can be overridden by caps or allocations
+Input catches in 329 can be overridden by caps or allocations
+Input catches in 330 can be overridden by caps or allocations
+Input catches in 331 can be overridden by caps or allocations
+Input catches in 332 can be overridden by caps or allocations
+Input catches in 333 can be overridden by caps or allocations
+Input catches in 334 can be overridden by caps or allocations
+Input catches in 335 can be overridden by caps or allocations
+Input catches in 336 can be overridden by caps or allocations
+Input catches in 297 can be overridden by caps or allocations
+Input catches in 298 can be overridden by caps or allocations
+Input catches in 299 can be overridden by caps or allocations
+Input catches in 300 can be overridden by caps or allocations
+Input catches in 301 can be overridden by caps or allocations
+Input catches in 302 can be overridden by caps or allocations
+Input catches in 303 can be overridden by caps or allocations
+Input catches in 304 can be overridden by caps or allocations
+Input catches in 305 can be overridden by caps or allocations
+Input catches in 306 can be overridden by caps or allocations
+Input catches in 307 can be overridden by caps or allocations
+Input catches in 308 can be overridden by caps or allocations
+Input catches in 309 can be overridden by caps or allocations
+Input catches in 310 can be overridden by caps or allocations
+Input catches in 311 can be overridden by caps or allocations
+Input catches in 312 can be overridden by caps or allocations
+Input catches in 313 can be overridden by caps or allocations
+Input catches in 314 can be overridden by caps or allocations
+Input catches in 315 can be overridden by caps or allocations
+Input catches in 316 can be overridden by caps or allocations
+Input catches in 317 can be overridden by caps or allocations
+Input catches in 318 can be overridden by caps or allocations
+Input catches in 319 can be overridden by caps or allocations
+Input catches in 320 can be overridden by caps or allocations
+Input catches in 321 can be overridden by caps or allocations
+Input catches in 322 can be overridden by caps or allocations
+Input catches in 323 can be overridden by caps or allocations
+Input catches in 324 can be overridden by caps or allocations
+Input catches in 325 can be overridden by caps or allocations
+Input catches in 326 can be overridden by caps or allocations
+Input catches in 327 can be overridden by caps or allocations
+Input catches in 328 can be overridden by caps or allocations
+Input catches in 329 can be overridden by caps or allocations
+Input catches in 330 can be overridden by caps or allocations
+Input catches in 331 can be overridden by caps or allocations
+Input catches in 332 can be overridden by caps or allocations
+Input catches in 333 can be overridden by caps or allocations
+Input catches in 334 can be overridden by caps or allocations
+Input catches in 335 can be overridden by caps or allocations
+Input catches in 336 can be overridden by caps or allocations
+Input catches in 297 can be overridden by caps or allocations
+Input catches in 298 can be overridden by caps or allocations
+Input catches in 299 can be overridden by caps or allocations
+Input catches in 300 can be overridden by caps or allocations
+Input catches in 301 can be overridden by caps or allocations
+Input catches in 302 can be overridden by caps or allocations
+Input catches in 303 can be overridden by caps or allocations
+Input catches in 304 can be overridden by caps or allocations
+Input catches in 305 can be overridden by caps or allocations
+Input catches in 306 can be overridden by caps or allocations
+Input catches in 307 can be overridden by caps or allocations
+Input catches in 308 can be overridden by caps or allocations
+Input catches in 309 can be overridden by caps or allocations
+Input catches in 310 can be overridden by caps or allocations
+Input catches in 311 can be overridden by caps or allocations
+Input catches in 312 can be overridden by caps or allocations
+Input catches in 313 can be overridden by caps or allocations
+Input catches in 314 can be overridden by caps or allocations
+Input catches in 315 can be overridden by caps or allocations
+Input catches in 316 can be overridden by caps or allocations
+Input catches in 317 can be overridden by caps or allocations
+Input catches in 318 can be overridden by caps or allocations
+Input catches in 319 can be overridden by caps or allocations
+Input catches in 320 can be overridden by caps or allocations
+Input catches in 321 can be overridden by caps or allocations
+Input catches in 322 can be overridden by caps or allocations
+Input catches in 323 can be overridden by caps or allocations
+Input catches in 324 can be overridden by caps or allocations
+Input catches in 325 can be overridden by caps or allocations
+Input catches in 326 can be overridden by caps or allocations
+Input catches in 327 can be overridden by caps or allocations
+Input catches in 328 can be overridden by caps or allocations
+Input catches in 329 can be overridden by caps or allocations
+Input catches in 330 can be overridden by caps or allocations
+Input catches in 331 can be overridden by caps or allocations
+Input catches in 332 can be overridden by caps or allocations
+Input catches in 333 can be overridden by caps or allocations
+Input catches in 334 can be overridden by caps or allocations
+Input catches in 335 can be overridden by caps or allocations
+Input catches in 336 can be overridden by caps or allocations
+Input catches in 297 can be overridden by caps or allocations
+Input catches in 298 can be overridden by caps or allocations
+Input catches in 299 can be overridden by caps or allocations
+Input catches in 300 can be overridden by caps or allocations
+Input catches in 301 can be overridden by caps or allocations
+Input catches in 302 can be overridden by caps or allocations
+Input catches in 303 can be overridden by caps or allocations
+Input catches in 304 can be overridden by caps or allocations
+Input catches in 305 can be overridden by caps or allocations
+Input catches in 306 can be overridden by caps or allocations
+Input catches in 307 can be overridden by caps or allocations
+Input catches in 308 can be overridden by caps or allocations
+Input catches in 309 can be overridden by caps or allocations
+Input catches in 310 can be overridden by caps or allocations
+Input catches in 311 can be overridden by caps or allocations
+Input catches in 312 can be overridden by caps or allocations
+Input catches in 313 can be overridden by caps or allocations
+Input catches in 314 can be overridden by caps or allocations
+Input catches in 315 can be overridden by caps or allocations
+Input catches in 316 can be overridden by caps or allocations
+Input catches in 317 can be overridden by caps or allocations
+Input catches in 318 can be overridden by caps or allocations
+Input catches in 319 can be overridden by caps or allocations
+Input catches in 320 can be overridden by caps or allocations
+Input catches in 321 can be overridden by caps or allocations
+Input catches in 322 can be overridden by caps or allocations
+Input catches in 323 can be overridden by caps or allocations
+Input catches in 324 can be overridden by caps or allocations
+Input catches in 325 can be overridden by caps or allocations
+Input catches in 326 can be overridden by caps or allocations
+Input catches in 327 can be overridden by caps or allocations
+Input catches in 328 can be overridden by caps or allocations
+Input catches in 329 can be overridden by caps or allocations
+Input catches in 330 can be overridden by caps or allocations
+Input catches in 331 can be overridden by caps or allocations
+Input catches in 332 can be overridden by caps or allocations
+Input catches in 333 can be overridden by caps or allocations
+Input catches in 334 can be overridden by caps or allocations
+Input catches in 335 can be overridden by caps or allocations
+Input catches in 336 can be overridden by caps or allocations
+Input catches in 297 can be overridden by caps or allocations
+Input catches in 298 can be overridden by caps or allocations
+Input catches in 299 can be overridden by caps or allocations
+Input catches in 300 can be overridden by caps or allocations
+Input catches in 301 can be overridden by caps or allocations
+Input catches in 302 can be overridden by caps or allocations
+Input catches in 303 can be overridden by caps or allocations
+Input catches in 304 can be overridden by caps or allocations
+Input catches in 305 can be overridden by caps or allocations
+Input catches in 306 can be overridden by caps or allocations
+Input catches in 307 can be overridden by caps or allocations
+Input catches in 308 can be overridden by caps or allocations
+Input catches in 309 can be overridden by caps or allocations
+Input catches in 310 can be overridden by caps or allocations
+Input catches in 311 can be overridden by caps or allocations
+Input catches in 312 can be overridden by caps or allocations
+Input catches in 313 can be overridden by caps or allocations
+Input catches in 314 can be overridden by caps or allocations
+Input catches in 315 can be overridden by caps or allocations
+Input catches in 316 can be overridden by caps or allocations
+Input catches in 317 can be overridden by caps or allocations
+Input catches in 318 can be overridden by caps or allocations
+Input catches in 319 can be overridden by caps or allocations
+Input catches in 320 can be overridden by caps or allocations
+Input catches in 321 can be overridden by caps or allocations
+Input catches in 322 can be overridden by caps or allocations
+Input catches in 323 can be overridden by caps or allocations
+Input catches in 324 can be overridden by caps or allocations
+Input catches in 325 can be overridden by caps or allocations
+Input catches in 326 can be overridden by caps or allocations
+Input catches in 327 can be overridden by caps or allocations
+Input catches in 328 can be overridden by caps or allocations
+Input catches in 329 can be overridden by caps or allocations
+Input catches in 330 can be overridden by caps or allocations
+Input catches in 331 can be overridden by caps or allocations
+Input catches in 332 can be overridden by caps or allocations
+Input catches in 333 can be overridden by caps or allocations
+Input catches in 334 can be overridden by caps or allocations
+Input catches in 335 can be overridden by caps or allocations
+Input catches in 336 can be overridden by caps or allocations
+Input catches in 297 can be overridden by caps or allocations
+Input catches in 298 can be overridden by caps or allocations
+Input catches in 299 can be overridden by caps or allocations
+Input catches in 300 can be overridden by caps or allocations
+Input catches in 301 can be overridden by caps or allocations
+Input catches in 302 can be overridden by caps or allocations
+Input catches in 303 can be overridden by caps or allocations
+Input catches in 304 can be overridden by caps or allocations
+Input catches in 305 can be overridden by caps or allocations
+Input catches in 306 can be overridden by caps or allocations
+Input catches in 307 can be overridden by caps or allocations
+Input catches in 308 can be overridden by caps or allocations
+Input catches in 309 can be overridden by caps or allocations
+Input catches in 310 can be overridden by caps or allocations
+Input catches in 311 can be overridden by caps or allocations
+Input catches in 312 can be overridden by caps or allocations
+Input catches in 313 can be overridden by caps or allocations
+Input catches in 314 can be overridden by caps or allocations
+Input catches in 315 can be overridden by caps or allocations
+Input catches in 316 can be overridden by caps or allocations
+Input catches in 317 can be overridden by caps or allocations
+Input catches in 318 can be overridden by caps or allocations
+Input catches in 319 can be overridden by caps or allocations
+Input catches in 320 can be overridden by caps or allocations
+Input catches in 321 can be overridden by caps or allocations
+Input catches in 322 can be overridden by caps or allocations
+Input catches in 323 can be overridden by caps or allocations
+Input catches in 324 can be overridden by caps or allocations
+Input catches in 325 can be overridden by caps or allocations
+Input catches in 326 can be overridden by caps or allocations
+Input catches in 327 can be overridden by caps or allocations
+Input catches in 328 can be overridden by caps or allocations
+Input catches in 329 can be overridden by caps or allocations
+Input catches in 330 can be overridden by caps or allocations
+Input catches in 331 can be overridden by caps or allocations
+Input catches in 332 can be overridden by caps or allocations
+Input catches in 333 can be overridden by caps or allocations
+Input catches in 334 can be overridden by caps or allocations
+Input catches in 335 can be overridden by caps or allocations
+Input catches in 336 can be overridden by caps or allocations
+Input catches in 297 can be overridden by caps or allocations
+Input catches in 298 can be overridden by caps or allocations
+Input catches in 299 can be overridden by caps or allocations
+Input catches in 300 can be overridden by caps or allocations
+Input catches in 301 can be overridden by caps or allocations
+Input catches in 302 can be overridden by caps or allocations
+Input catches in 303 can be overridden by caps or allocations
+Input catches in 304 can be overridden by caps or allocations
+Input catches in 305 can be overridden by caps or allocations
+Input catches in 306 can be overridden by caps or allocations
+Input catches in 307 can be overridden by caps or allocations
+Input catches in 308 can be overridden by caps or allocations
+Input catches in 309 can be overridden by caps or allocations
+Input catches in 310 can be overridden by caps or allocations
+Input catches in 311 can be overridden by caps or allocations
+Input catches in 312 can be overridden by caps or allocations
+Input catches in 313 can be overridden by caps or allocations
+Input catches in 314 can be overridden by caps or allocations
+Input catches in 315 can be overridden by caps or allocations
+Input catches in 316 can be overridden by caps or allocations
+Input catches in 317 can be overridden by caps or allocations
+Input catches in 318 can be overridden by caps or allocations
+Input catches in 319 can be overridden by caps or allocations
+Input catches in 320 can be overridden by caps or allocations
+Input catches in 321 can be overridden by caps or allocations
+Input catches in 322 can be overridden by caps or allocations
+Input catches in 323 can be overridden by caps or allocations
+Input catches in 324 can be overridden by caps or allocations
+Input catches in 325 can be overridden by caps or allocations
+Input catches in 326 can be overridden by caps or allocations
+Input catches in 327 can be overridden by caps or allocations
+Input catches in 328 can be overridden by caps or allocations
+Input catches in 329 can be overridden by caps or allocations
+Input catches in 330 can be overridden by caps or allocations
+Input catches in 331 can be overridden by caps or allocations
+Input catches in 332 can be overridden by caps or allocations
+Input catches in 333 can be overridden by caps or allocations
+Input catches in 334 can be overridden by caps or allocations
+Input catches in 335 can be overridden by caps or allocations
+Input catches in 336 can be overridden by caps or allocations
+Input catches in 297 can be overridden by caps or allocations
+Input catches in 298 can be overridden by caps or allocations
+Input catches in 299 can be overridden by caps or allocations
+Input catches in 300 can be overridden by caps or allocations
+Input catches in 301 can be overridden by caps or allocations
+Input catches in 302 can be overridden by caps or allocations
+Input catches in 303 can be overridden by caps or allocations
+Input catches in 304 can be overridden by caps or allocations
+Input catches in 305 can be overridden by caps or allocations
+Input catches in 306 can be overridden by caps or allocations
+Input catches in 307 can be overridden by caps or allocations
+Input catches in 308 can be overridden by caps or allocations
+Input catches in 309 can be overridden by caps or allocations
+Input catches in 310 can be overridden by caps or allocations
+Input catches in 311 can be overridden by caps or allocations
+Input catches in 312 can be overridden by caps or allocations
+Input catches in 313 can be overridden by caps or allocations
+Input catches in 314 can be overridden by caps or allocations
+Input catches in 315 can be overridden by caps or allocations
+Input catches in 316 can be overridden by caps or allocations
+Input catches in 317 can be overridden by caps or allocations
+Input catches in 318 can be overridden by caps or allocations
+Input catches in 319 can be overridden by caps or allocations
+Input catches in 320 can be overridden by caps or allocations
+Input catches in 321 can be overridden by caps or allocations
+Input catches in 322 can be overridden by caps or allocations
+Input catches in 323 can be overridden by caps or allocations
+Input catches in 324 can be overridden by caps or allocations
+Input catches in 325 can be overridden by caps or allocations
+Input catches in 326 can be overridden by caps or allocations
+Input catches in 327 can be overridden by caps or allocations
+Input catches in 328 can be overridden by caps or allocations
+Input catches in 329 can be overridden by caps or allocations
+Input catches in 330 can be overridden by caps or allocations
+Input catches in 331 can be overridden by caps or allocations
+Input catches in 332 can be overridden by caps or allocations
+Input catches in 333 can be overridden by caps or allocations
+Input catches in 334 can be overridden by caps or allocations
+Input catches in 335 can be overridden by caps or allocations
+Input catches in 336 can be overridden by caps or allocations
+Input catches in 297 can be overridden by caps or allocations
+Input catches in 298 can be overridden by caps or allocations
+Input catches in 299 can be overridden by caps or allocations
+Input catches in 300 can be overridden by caps or allocations
+Input catches in 301 can be overridden by caps or allocations
+Input catches in 302 can be overridden by caps or allocations
+Input catches in 303 can be overridden by caps or allocations
+Input catches in 304 can be overridden by caps or allocations
+Input catches in 305 can be overridden by caps or allocations
+Input catches in 306 can be overridden by caps or allocations
+Input catches in 307 can be overridden by caps or allocations
+Input catches in 308 can be overridden by caps or allocations
+Input catches in 309 can be overridden by caps or allocations
+Input catches in 310 can be overridden by caps or allocations
+Input catches in 311 can be overridden by caps or allocations
+Input catches in 312 can be overridden by caps or allocations
+Input catches in 313 can be overridden by caps or allocations
+Input catches in 314 can be overridden by caps or allocations
+Input catches in 315 can be overridden by caps or allocations
+Input catches in 316 can be overridden by caps or allocations
+Input catches in 317 can be overridden by caps or allocations
+Input catches in 318 can be overridden by caps or allocations
+Input catches in 319 can be overridden by caps or allocations
+Input catches in 320 can be overridden by caps or allocations
+Input catches in 321 can be overridden by caps or allocations
+Input catches in 322 can be overridden by caps or allocations
+Input catches in 323 can be overridden by caps or allocations
+Input catches in 324 can be overridden by caps or allocations
+Input catches in 325 can be overridden by caps or allocations
+Input catches in 326 can be overridden by caps or allocations
+Input catches in 327 can be overridden by caps or allocations
+Input catches in 328 can be overridden by caps or allocations
+Input catches in 329 can be overridden by caps or allocations
+Input catches in 330 can be overridden by caps or allocations
+Input catches in 331 can be overridden by caps or allocations
+Input catches in 332 can be overridden by caps or allocations
+Input catches in 333 can be overridden by caps or allocations
+Input catches in 334 can be overridden by caps or allocations
+Input catches in 335 can be overridden by caps or allocations
+Input catches in 336 can be overridden by caps or allocations
+Input catches in 297 can be overridden by caps or allocations
+Input catches in 298 can be overridden by caps or allocations
+Input catches in 299 can be overridden by caps or allocations
+Input catches in 300 can be overridden by caps or allocations
+Input catches in 301 can be overridden by caps or allocations
+Input catches in 302 can be overridden by caps or allocations
+Input catches in 303 can be overridden by caps or allocations
+Input catches in 304 can be overridden by caps or allocations
+Input catches in 305 can be overridden by caps or allocations
+Input catches in 306 can be overridden by caps or allocations
+Input catches in 307 can be overridden by caps or allocations
+Input catches in 308 can be overridden by caps or allocations
+Input catches in 309 can be overridden by caps or allocations
+Input catches in 310 can be overridden by caps or allocations
+Input catches in 311 can be overridden by caps or allocations
+Input catches in 312 can be overridden by caps or allocations
+Input catches in 313 can be overridden by caps or allocations
+Input catches in 314 can be overridden by caps or allocations
+Input catches in 315 can be overridden by caps or allocations
+Input catches in 316 can be overridden by caps or allocations
+Input catches in 317 can be overridden by caps or allocations
+Input catches in 318 can be overridden by caps or allocations
+Input catches in 319 can be overridden by caps or allocations
+Input catches in 320 can be overridden by caps or allocations
+Input catches in 321 can be overridden by caps or allocations
+Input catches in 322 can be overridden by caps or allocations
+Input catches in 323 can be overridden by caps or allocations
+Input catches in 324 can be overridden by caps or allocations
+Input catches in 325 can be overridden by caps or allocations
+Input catches in 326 can be overridden by caps or allocations
+Input catches in 327 can be overridden by caps or allocations
+Input catches in 328 can be overridden by caps or allocations
+Input catches in 329 can be overridden by caps or allocations
+Input catches in 330 can be overridden by caps or allocations
+Input catches in 331 can be overridden by caps or allocations
+Input catches in 332 can be overridden by caps or allocations
+Input catches in 333 can be overridden by caps or allocations
+Input catches in 334 can be overridden by caps or allocations
+Input catches in 335 can be overridden by caps or allocations
+Input catches in 336 can be overridden by caps or allocations
+Input catches in 297 can be overridden by caps or allocations
+Input catches in 298 can be overridden by caps or allocations
+Input catches in 299 can be overridden by caps or allocations
+Input catches in 300 can be overridden by caps or allocations
+Input catches in 301 can be overridden by caps or allocations
+Input catches in 302 can be overridden by caps or allocations
+Input catches in 303 can be overridden by caps or allocations
+Input catches in 304 can be overridden by caps or allocations
+Input catches in 305 can be overridden by caps or allocations
+Input catches in 306 can be overridden by caps or allocations
+Input catches in 307 can be overridden by caps or allocations
+Input catches in 308 can be overridden by caps or allocations
+Input catches in 309 can be overridden by caps or allocations
+Input catches in 310 can be overridden by caps or allocations
+Input catches in 311 can be overridden by caps or allocations
+Input catches in 312 can be overridden by caps or allocations
+Input catches in 313 can be overridden by caps or allocations
+Input catches in 314 can be overridden by caps or allocations
+Input catches in 315 can be overridden by caps or allocations
+Input catches in 316 can be overridden by caps or allocations
+Input catches in 317 can be overridden by caps or allocations
+Input catches in 318 can be overridden by caps or allocations
+Input catches in 319 can be overridden by caps or allocations
+Input catches in 320 can be overridden by caps or allocations
+Input catches in 321 can be overridden by caps or allocations
+Input catches in 322 can be overridden by caps or allocations
+Input catches in 323 can be overridden by caps or allocations
+Input catches in 324 can be overridden by caps or allocations
+Input catches in 325 can be overridden by caps or allocations
+Input catches in 326 can be overridden by caps or allocations
+Input catches in 327 can be overridden by caps or allocations
+Input catches in 328 can be overridden by caps or allocations
+Input catches in 329 can be overridden by caps or allocations
+Input catches in 330 can be overridden by caps or allocations
+Input catches in 331 can be overridden by caps or allocations
+Input catches in 332 can be overridden by caps or allocations
+Input catches in 333 can be overridden by caps or allocations
+Input catches in 334 can be overridden by caps or allocations
+Input catches in 335 can be overridden by caps or allocations
+Input catches in 336 can be overridden by caps or allocations
+Input catches in 297 can be overridden by caps or allocations
+Input catches in 298 can be overridden by caps or allocations
+Input catches in 299 can be overridden by caps or allocations
+Input catches in 300 can be overridden by caps or allocations
+Input catches in 301 can be overridden by caps or allocations
+Input catches in 302 can be overridden by caps or allocations
+Input catches in 303 can be overridden by caps or allocations
+Input catches in 304 can be overridden by caps or allocations
+Input catches in 305 can be overridden by caps or allocations
+Input catches in 306 can be overridden by caps or allocations
+Input catches in 307 can be overridden by caps or allocations
+Input catches in 308 can be overridden by caps or allocations
+Input catches in 309 can be overridden by caps or allocations
+Input catches in 310 can be overridden by caps or allocations
+Input catches in 311 can be overridden by caps or allocations
+Input catches in 312 can be overridden by caps or allocations
+Input catches in 313 can be overridden by caps or allocations
+Input catches in 314 can be overridden by caps or allocations
+Input catches in 315 can be overridden by caps or allocations
+Input catches in 316 can be overridden by caps or allocations
+Input catches in 317 can be overridden by caps or allocations
+Input catches in 318 can be overridden by caps or allocations
+Input catches in 319 can be overridden by caps or allocations
+Input catches in 320 can be overridden by caps or allocations
+Input catches in 321 can be overridden by caps or allocations
+Input catches in 322 can be overridden by caps or allocations
+Input catches in 323 can be overridden by caps or allocations
+Input catches in 324 can be overridden by caps or allocations
+Input catches in 325 can be overridden by caps or allocations
+Input catches in 326 can be overridden by caps or allocations
+Input catches in 327 can be overridden by caps or allocations
+Input catches in 328 can be overridden by caps or allocations
+Input catches in 329 can be overridden by caps or allocations
+Input catches in 330 can be overridden by caps or allocations
+Input catches in 331 can be overridden by caps or allocations
+Input catches in 332 can be overridden by caps or allocations
+Input catches in 333 can be overridden by caps or allocations
+Input catches in 334 can be overridden by caps or allocations
+Input catches in 335 can be overridden by caps or allocations
+Input catches in 336 can be overridden by caps or allocations
+Input catches in 297 can be overridden by caps or allocations
+Input catches in 298 can be overridden by caps or allocations
+Input catches in 299 can be overridden by caps or allocations
+Input catches in 300 can be overridden by caps or allocations
+Input catches in 301 can be overridden by caps or allocations
+Input catches in 302 can be overridden by caps or allocations
+Input catches in 303 can be overridden by caps or allocations
+Input catches in 304 can be overridden by caps or allocations
+Input catches in 305 can be overridden by caps or allocations
+Input catches in 306 can be overridden by caps or allocations
+Input catches in 307 can be overridden by caps or allocations
+Input catches in 308 can be overridden by caps or allocations
+Input catches in 309 can be overridden by caps or allocations
+Input catches in 310 can be overridden by caps or allocations
+Input catches in 311 can be overridden by caps or allocations
+Input catches in 312 can be overridden by caps or allocations
+Input catches in 313 can be overridden by caps or allocations
+Input catches in 314 can be overridden by caps or allocations
+Input catches in 315 can be overridden by caps or allocations
+Input catches in 316 can be overridden by caps or allocations
+Input catches in 317 can be overridden by caps or allocations
+Input catches in 318 can be overridden by caps or allocations
+Input catches in 319 can be overridden by caps or allocations
+Input catches in 320 can be overridden by caps or allocations
+Input catches in 321 can be overridden by caps or allocations
+Input catches in 322 can be overridden by caps or allocations
+Input catches in 323 can be overridden by caps or allocations
+Input catches in 324 can be overridden by caps or allocations
+Input catches in 325 can be overridden by caps or allocations
+Input catches in 326 can be overridden by caps or allocations
+Input catches in 327 can be overridden by caps or allocations
+Input catches in 328 can be overridden by caps or allocations
+Input catches in 329 can be overridden by caps or allocations
+Input catches in 330 can be overridden by caps or allocations
+Input catches in 331 can be overridden by caps or allocations
+Input catches in 332 can be overridden by caps or allocations
+Input catches in 333 can be overridden by caps or allocations
+Input catches in 334 can be overridden by caps or allocations
+Input catches in 335 can be overridden by caps or allocations
+Input catches in 336 can be overridden by caps or allocations
+Input catches in 297 can be overridden by caps or allocations
+Input catches in 298 can be overridden by caps or allocations
+Input catches in 301 can be overridden by caps or allocations
+Input catches in 302 can be overridden by caps or allocations
+Input catches in 305 can be overridden by caps or allocations
+Input catches in 306 can be overridden by caps or allocations
+Input catches in 309 can be overridden by caps or allocations
+Input catches in 310 can be overridden by caps or allocations
+Input catches in 313 can be overridden by caps or allocations
+Input catches in 314 can be overridden by caps or allocations
+Input catches in 317 can be overridden by caps or allocations
+Input catches in 318 can be overridden by caps or allocations
+Input catches in 321 can be overridden by caps or allocations
+Input catches in 322 can be overridden by caps or allocations
+Input catches in 325 can be overridden by caps or allocations
+Input catches in 326 can be overridden by caps or allocations
+Input catches in 329 can be overridden by caps or allocations
+Input catches in 330 can be overridden by caps or allocations
+Input catches in 333 can be overridden by caps or allocations
+Input catches in 334 can be overridden by caps or allocations
+Input catches in 297 can be overridden by caps or allocations
+Input catches in 298 can be overridden by caps or allocations
+Input catches in 300 can be overridden by caps or allocations
+Input catches in 301 can be overridden by caps or allocations
+Input catches in 302 can be overridden by caps or allocations
+Input catches in 304 can be overridden by caps or allocations
+Input catches in 305 can be overridden by caps or allocations
+Input catches in 306 can be overridden by caps or allocations
+Input catches in 308 can be overridden by caps or allocations
+Input catches in 309 can be overridden by caps or allocations
+Input catches in 310 can be overridden by caps or allocations
+Input catches in 312 can be overridden by caps or allocations
+Input catches in 313 can be overridden by caps or allocations
+Input catches in 314 can be overridden by caps or allocations
+Input catches in 316 can be overridden by caps or allocations
+Input catches in 317 can be overridden by caps or allocations
+Input catches in 318 can be overridden by caps or allocations
+Input catches in 320 can be overridden by caps or allocations
+Input catches in 321 can be overridden by caps or allocations
+Input catches in 322 can be overridden by caps or allocations
+Input catches in 324 can be overridden by caps or allocations
+Input catches in 325 can be overridden by caps or allocations
+Input catches in 326 can be overridden by caps or allocations
+Input catches in 328 can be overridden by caps or allocations
+Input catches in 329 can be overridden by caps or allocations
+Input catches in 330 can be overridden by caps or allocations
+Input catches in 332 can be overridden by caps or allocations
+Input catches in 333 can be overridden by caps or allocations
+Input catches in 334 can be overridden by caps or allocations
+Input catches in 336 can be overridden by caps or allocations
+Input catches in 297 can be overridden by caps or allocations
+Input catches in 298 can be overridden by caps or allocations
+Input catches in 299 can be overridden by caps or allocations
+Input catches in 300 can be overridden by caps or allocations
+Input catches in 301 can be overridden by caps or allocations
+Input catches in 302 can be overridden by caps or allocations
+Input catches in 303 can be overridden by caps or allocations
+Input catches in 304 can be overridden by caps or allocations
+Input catches in 305 can be overridden by caps or allocations
+Input catches in 306 can be overridden by caps or allocations
+Input catches in 307 can be overridden by caps or allocations
+Input catches in 308 can be overridden by caps or allocations
+Input catches in 309 can be overridden by caps or allocations
+Input catches in 310 can be overridden by caps or allocations
+Input catches in 311 can be overridden by caps or allocations
+Input catches in 312 can be overridden by caps or allocations
+Input catches in 313 can be overridden by caps or allocations
+Input catches in 314 can be overridden by caps or allocations
+Input catches in 315 can be overridden by caps or allocations
+Input catches in 316 can be overridden by caps or allocations
+Input catches in 317 can be overridden by caps or allocations
+Input catches in 318 can be overridden by caps or allocations
+Input catches in 319 can be overridden by caps or allocations
+Input catches in 320 can be overridden by caps or allocations
+Input catches in 321 can be overridden by caps or allocations
+Input catches in 322 can be overridden by caps or allocations
+Input catches in 323 can be overridden by caps or allocations
+Input catches in 324 can be overridden by caps or allocations
+Input catches in 325 can be overridden by caps or allocations
+Input catches in 326 can be overridden by caps or allocations
+Input catches in 327 can be overridden by caps or allocations
+Input catches in 328 can be overridden by caps or allocations
+Input catches in 329 can be overridden by caps or allocations
+Input catches in 330 can be overridden by caps or allocations
+Input catches in 331 can be overridden by caps or allocations
+Input catches in 332 can be overridden by caps or allocations
+Input catches in 333 can be overridden by caps or allocations
+Input catches in 334 can be overridden by caps or allocations
+Input catches in 335 can be overridden by caps or allocations
+Input catches in 336 can be overridden by caps or allocations
+Input catches in 298 can be overridden by caps or allocations
+Input catches in 302 can be overridden by caps or allocations
+Input catches in 306 can be overridden by caps or allocations
+Input catches in 310 can be overridden by caps or allocations
+Input catches in 314 can be overridden by caps or allocations
+Input catches in 318 can be overridden by caps or allocations
+Input catches in 322 can be overridden by caps or allocations
+Input catches in 326 can be overridden by caps or allocations
+Input catches in 330 can be overridden by caps or allocations
+Input catches in 334 can be overridden by caps or allocations
+Input catches in 297 can be overridden by caps or allocations
+Input catches in 298 can be overridden by caps or allocations
+Input catches in 300 can be overridden by caps or allocations
+Input catches in 301 can be overridden by caps or allocations
+Input catches in 302 can be overridden by caps or allocations
+Input catches in 304 can be overridden by caps or allocations
+Input catches in 305 can be overridden by caps or allocations
+Input catches in 306 can be overridden by caps or allocations
+Input catches in 308 can be overridden by caps or allocations
+Input catches in 309 can be overridden by caps or allocations
+Input catches in 310 can be overridden by caps or allocations
+Input catches in 312 can be overridden by caps or allocations
+Input catches in 313 can be overridden by caps or allocations
+Input catches in 314 can be overridden by caps or allocations
+Input catches in 316 can be overridden by caps or allocations
+Input catches in 317 can be overridden by caps or allocations
+Input catches in 318 can be overridden by caps or allocations
+Input catches in 320 can be overridden by caps or allocations
+Input catches in 321 can be overridden by caps or allocations
+Input catches in 322 can be overridden by caps or allocations
+Input catches in 324 can be overridden by caps or allocations
+Input catches in 325 can be overridden by caps or allocations
+Input catches in 326 can be overridden by caps or allocations
+Input catches in 328 can be overridden by caps or allocations
+Input catches in 329 can be overridden by caps or allocations
+Input catches in 330 can be overridden by caps or allocations
+Input catches in 332 can be overridden by caps or allocations
+Input catches in 333 can be overridden by caps or allocations
+Input catches in 334 can be overridden by caps or allocations
+Input catches in 336 can be overridden by caps or allocations
+Input catches in 297 can be overridden by caps or allocations
+Input catches in 298 can be overridden by caps or allocations
+Input catches in 299 can be overridden by caps or allocations
+Input catches in 300 can be overridden by caps or allocations
+Input catches in 301 can be overridden by caps or allocations
+Input catches in 302 can be overridden by caps or allocations
+Input catches in 303 can be overridden by caps or allocations
+Input catches in 304 can be overridden by caps or allocations
+Input catches in 305 can be overridden by caps or allocations
+Input catches in 306 can be overridden by caps or allocations
+Input catches in 307 can be overridden by caps or allocations
+Input catches in 308 can be overridden by caps or allocations
+Input catches in 309 can be overridden by caps or allocations
+Input catches in 310 can be overridden by caps or allocations
+Input catches in 311 can be overridden by caps or allocations
+Input catches in 312 can be overridden by caps or allocations
+Input catches in 313 can be overridden by caps or allocations
+Input catches in 314 can be overridden by caps or allocations
+Input catches in 315 can be overridden by caps or allocations
+Input catches in 316 can be overridden by caps or allocations
+Input catches in 317 can be overridden by caps or allocations
+Input catches in 318 can be overridden by caps or allocations
+Input catches in 319 can be overridden by caps or allocations
+Input catches in 320 can be overridden by caps or allocations
+Input catches in 321 can be overridden by caps or allocations
+Input catches in 322 can be overridden by caps or allocations
+Input catches in 323 can be overridden by caps or allocations
+Input catches in 324 can be overridden by caps or allocations
+Input catches in 325 can be overridden by caps or allocations
+Input catches in 326 can be overridden by caps or allocations
+Input catches in 327 can be overridden by caps or allocations
+Input catches in 328 can be overridden by caps or allocations
+Input catches in 329 can be overridden by caps or allocations
+Input catches in 330 can be overridden by caps or allocations
+Input catches in 331 can be overridden by caps or allocations
+Input catches in 332 can be overridden by caps or allocations
+Input catches in 333 can be overridden by caps or allocations
+Input catches in 334 can be overridden by caps or allocations
+Input catches in 335 can be overridden by caps or allocations
+Input catches in 336 can be overridden by caps or allocations
+Block:1 2 ends in: 999 after retroyr+1:  297
+Block:1 2 ends in: 999 reset to YrMax:  336
+Block:4 2 ends in: 999 after retroyr+1:  297
+Block:4 2 ends in: 999 reset to YrMax:  336
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 211 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 211 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 212 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 212 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 213 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 213 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 213 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 214 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 214 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 214 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 215 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 215 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 216 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 216 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 216 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 217 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 217 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 217 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 218 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 218 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 218 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 219 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 219 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 220 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 220 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 221 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 221 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 221 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 222 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 222 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 222 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 223 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 223 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 224 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 224 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 225 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 225 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 225 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 226 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 226 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 226 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 227 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 228 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 228 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 229 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 229 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 230 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 230 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 231 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 231 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 231 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 232 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 233 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 233 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 234 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 234 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 234 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 235 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 235 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 235 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 236 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 236 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 237 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 237 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 237 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 238 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 238 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 238 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 239 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 239 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 240 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 240 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 241 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 241 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 241 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 242 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 242 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 242 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 243 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 243 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 244 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 244 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 244 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 245 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 245 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 245 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 246 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 246 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 246 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 247 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 248 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 248 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 249 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 249 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 249 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 250 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 250 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 250 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 251 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 251 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 252 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 252 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 252 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 253 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 253 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 253 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 254 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 254 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 254 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 255 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 255 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 256 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 256 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 256 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 257 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 257 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 257 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 258 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 258 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 258 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 259 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 260 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 260 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 261 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 261 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 262 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 262 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 263 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 263 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 264 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 264 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 265 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 265 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 265 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 266 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 266 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 267 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 267 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 267 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 268 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 268 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 268 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 269 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 270 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 270 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 271 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 271 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 272 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 272 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 273 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 273 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 273 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 274 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 274 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 274 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 275 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 275 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 276 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 276 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 276 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 277 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 277 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 277 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 278 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 278 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 278 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 279 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 279 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 280 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 280 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 280 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 281 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 281 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 281 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 282 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 282 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 282 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 283 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 283 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 284 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 284 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 285 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 285 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 285 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 286 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 286 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 286 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 287 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 287 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 288 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 288 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 289 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 289 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 289 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 290 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 290 1 16
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 290 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 291 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 291 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 292 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 292 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 293 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 293 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 294 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 294 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 295 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 295 1 23
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 296 1 10
+1 1warn in first call:  Observation exists, but nil selected fish for year, seas, fleet 296 1 23
+setting positive forecast relF for forecast only fleet: 16
+Final gradient: 0.000696906 is larger than final_conv: 0.0001
+setting positive forecast relF for forecast only fleet: 16
+Reminder: Number of lamdas !=0.0 and !=1.0:  1
+Number_of_active_parameters_on_or_near_bounds: 1
+ N warnings: 1009
